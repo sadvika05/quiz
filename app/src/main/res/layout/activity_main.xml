@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayoutCompat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".ActivityMain">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="120dp"
+        android:contentDescription="@string/appbar_scrolling_view_behavior"
+        android:src="@drawable/undraw_online_learning_re_qw08__1_"
+        />
+
+    <TextView
+        android:id="@+id/textWelcome"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Quiz King"
+        />
+
+    <TextView
+        android:id="@+id/TextAppearance.AppCompat.Subhead"
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="an app to test your knowledge"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/input"
+            android:hint="Enter your name"
+        />
+
+        <Button
+            android:id="@+id/btnGetStarted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get started"
+            android:layout_marginTop="30dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/wave__4_"
+        android:layout_marginTop="60dp"/>
+
+
+</LinearLayout>
